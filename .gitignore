@@ -1,0 +1,10 @@
+# MATLAB
+*.asv
+*.m~
+
+# RL artifacts
+trainedAgent.mat
+*.mat
+
+# OS junk
+.DS_Store
