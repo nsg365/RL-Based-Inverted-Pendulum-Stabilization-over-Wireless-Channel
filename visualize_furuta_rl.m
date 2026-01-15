@@ -2,7 +2,7 @@ clc; clear; close all;
 load trainedAgent
 p = furuta_params();
 
-x = [0; 0; deg2rad(20); 0];
+x = [0; 0; deg2rad(90); 0];
 
 figure('Color','k')
 axis equal

@@ -39,8 +39,26 @@ u = 0;
 
 [t,x] = ode45(@(t,x) pendulum(t,x,u,m,L,l,Ip,Ia,g,A,B,K),time,x0);
 
-plot(t,x);
-legend('arm angle','arm velocity','pendulum angle','pendulum velocity');
+% plot(t,x);
+% legend('arm angle','arm velocity','pendulum angle','pendulum velocity');
+
+figure
+plot(t, rad2deg(x(:,1)), 'LineWidth',1.5); hold on
+plot(t, rad2deg(x(:,2)), 'LineWidth',1.5)
+plot(t, rad2deg(x(:,3)), 'LineWidth',1.5)
+plot(t, rad2deg(x(:,4)), 'LineWidth',1.5)
+
+grid on
+xlabel('Time (s)')
+ylabel('Degrees / Degrees per second')
+
+legend( ...
+    'arm angle (deg)', ...
+    'arm velocity (deg/s)', ...
+    'pendulum angle (deg)', ...
+    'pendulum velocity (deg/s)' ...
+)
+
 
 alpha = x(:,1);
 theta = x(:,3);
