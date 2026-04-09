@@ -3,7 +3,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project implements control of an inverted pendulum system using both **wired** (Arduino-based) and **wireless** (ESP-NOW-based) architectures.
 
@@ -11,7 +11,7 @@ The system is modeled and analyzed in **MATLAB/Simulink**, and control is implem
 
 ---
 
-## 🧠 System Architecture
+##  System Architecture
 
 ### 1. Wired Control (Arduino)
 - Sensor readings are directly obtained by the Arduino
@@ -27,7 +27,7 @@ The system is modeled and analyzed in **MATLAB/Simulink**, and control is implem
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 proportional/
@@ -48,7 +48,7 @@ wireless/
 
 ---
 
-## 🧪 Simulation (MATLAB / Simulink)
+##  Simulation (MATLAB / Simulink)
 
 ### Files
 
@@ -66,7 +66,7 @@ wireless/
 
 ---
 
-## ⚙️ Proportional Control (Wired Implementation)
+##  Proportional Control (Wired Implementation)
 
 **File:** `proportional/Proportional_controller.ino`
 
@@ -77,7 +77,7 @@ wireless/
 
 ---
 
-## 📡 Wireless Control (ESP-NOW Implementation)
+##  Wireless Control (ESP-NOW Implementation)
 
 ### `Pendulum_plant.ino`
 - Runs on ESP32 (plant side)
@@ -103,7 +103,7 @@ wireless/
 
 ---
 
-## ⚡ Key Features
+##  Key Features
 
 - Dual architecture: wired and wireless control
 - Real-time ESP-NOW communication
@@ -113,7 +113,7 @@ wireless/
 
 ---
 
-## 🚀 Applications
+##  Applications
 
 - Networked control systems
 - Wireless feedback control
@@ -122,7 +122,7 @@ wireless/
 
 ---
 
-## 🧾 Notes
+##  Notes
 
 - Controller gains are derived from MATLAB simulations
 - Wireless system introduces delay, analyzed via RTT measurement
